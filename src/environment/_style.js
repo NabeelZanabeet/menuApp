@@ -1,6 +1,7 @@
 const SPACING = {
-  DEFAULT: 24,
+  MINIMAL: 8,
   VIEW_MARGIN: 16,
+  DEFAULT: 24,
   BUTTON_HEIGHT: 40,
 };
 
