@@ -17,6 +17,11 @@ const styles = StyleSheet.create({
     width: 20,
     height: 20,
   },
+  loader: {
+    width: 35,
+    height: 35,
+    alignSelf: 'center',
+  },
   scrollView: {
     flex: 1,
     marginTop: 70,

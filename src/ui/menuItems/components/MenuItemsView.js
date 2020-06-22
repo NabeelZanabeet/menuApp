@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Image, Text, View, TouchableOpacity, ScrollView } from 'react-native';
 import styles from './MenuItemsView.styles';
-import { backIcon } from '../../../assets/images';
+import { backIcon, loader } from '../../../assets/images';
 
 const MenuItemsView = ({ items, onPressBackButton }) => {
   return (
@@ -11,17 +11,20 @@ const MenuItemsView = ({ items, onPressBackButton }) => {
         onPress={onPressBackButton}>
         <Image style={styles.backIcon} source={backIcon} resizeMode="contain" />
       </TouchableOpacity>
-      <ScrollView
-        style={styles.scrollView}
-        showsVerticalScrollIndicator={false}>
-        {items &&
-          items.map((item) => (
+      {items ? (
+        <ScrollView
+          style={styles.scrollView}
+          showsVerticalScrollIndicator={false}>
+          {items.map((item) => (
             <View style={styles.itemCard}>
               <Text style={styles.name}>{`Name: ${item.name}`}</Text>
               <Text style={styles.price}>{`Price: ${item.price}`}</Text>
             </View>
           ))}
-      </ScrollView>
+        </ScrollView>
+      ) : (
+        <Image style={styles.loader} source={loader} resizeMode="contain" />
+      )}
     </View>
   );
 };
