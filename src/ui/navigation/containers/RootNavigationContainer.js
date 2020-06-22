@@ -11,6 +11,7 @@ const Stack = createStackNavigator();
 const RootNavigationContainer = () => (
   <NavigationContainer>
     <Stack.Navigator
+      mode="card"
       headerMode="none"
       initialRouteName="Home"
       screenOptions={() => ({
