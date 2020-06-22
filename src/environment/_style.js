@@ -1,6 +1,7 @@
 const SPACING = {
   DEFAULT: 24,
   VIEW_MARGIN: 16,
+  BUTTON_HEIGHT: 40,
 };
 
 const COLOR = {
@@ -13,6 +14,7 @@ const COLOR = {
   TAR: '#2f2e2e',
   GREY: '#939384',
   GREY_LIGHT: '#F4F4F4',
+  CERULEAN: '#0077be',
 };
 
 const FONT_SIZE = {

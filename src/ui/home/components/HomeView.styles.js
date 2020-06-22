@@ -1,5 +1,7 @@
-import { StyleSheet } from 'react-native';
+import { Dimensions, StyleSheet } from 'react-native';
 import { STYLE } from '../../../environment/index';
+
+const window = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   container: {
@@ -8,9 +10,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: STYLE.COLOR.WHITE,
   },
-  text: {
-    color: STYLE.COLOR.BLACK,
-    fontSize: STYLE.FONT_SIZE.HEADLINES,
+  logo: {
+    width: window.width * 0.75,
+    height: 90,
+    marginBottom: 3 * STYLE.SPACING.DEFAULT,
+  },
+  button: {
+    marginBottom: STYLE.SPACING.VIEW_MARGIN,
   },
 });
 
