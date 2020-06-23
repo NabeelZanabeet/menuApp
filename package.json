@@ -1,6 +1,6 @@
 {
   "name": "menu",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -28,11 +28,17 @@
     "@react-native-community/eslint-config": "^2.0.0",
     "babel-jest": "^26.0.1",
     "eslint": "^7.3.0",
+    "husky": "^4.2.5",
     "jest": "^26.0.1",
     "metro-react-native-babel-preset": "^0.59.0 ",
     "react-test-renderer": "16.13.1"
   },
   "jest": {
     "preset": "react-native"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run lint && jest && yarn version --patch --no-commit-hooks"
+    }
   }
 }
