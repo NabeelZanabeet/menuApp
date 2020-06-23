@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeContainer from '../../home/container/HomeContainer';
 import MenuItemsContainer from '../../menuItems/container/MenuItemsContainer';
 import MenuCategoriesContainer from '../../menuCategories/container/MenuCategoriesContainer';
+import FlashMessage from 'react-native-flash-message';
 
 const Stack = createStackNavigator();
 
@@ -21,6 +22,7 @@ const RootNavigationContainer = () => (
       <Stack.Screen name="menuItems" component={MenuItemsContainer} />
       <Stack.Screen name="menuCategories" component={MenuCategoriesContainer} />
     </Stack.Navigator>
+    <FlashMessage position="top" />
   </NavigationContainer>
 );
 
