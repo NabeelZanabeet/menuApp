@@ -8,6 +8,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: STYLE.COLOR.WHITE,
   },
+  title: {
+    position: 'absolute',
+    top: 24,
+    textAlign: 'center',
+    fontSize: STYLE.FONT_SIZE.HEADLINES,
+  },
   backTouchable: {
     position: 'absolute',
     left: 24,

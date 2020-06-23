@@ -11,6 +11,7 @@ const MenuItemsView = ({ isProcessing, items, onPressBackButton }) => {
         onPress={onPressBackButton}>
         <Image style={styles.backIcon} source={backIcon} resizeMode="contain" />
       </TouchableOpacity>
+      <Text style={styles.title}>Items</Text>
       {items && !isProcessing && (
         <ScrollView
           style={styles.scrollView}

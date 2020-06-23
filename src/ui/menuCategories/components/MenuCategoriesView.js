@@ -15,6 +15,7 @@ const MenuCategoriesView = ({
         onPress={onPressBackButton}>
         <Image style={styles.backIcon} source={backIcon} resizeMode="contain" />
       </TouchableOpacity>
+      <Text style={styles.title}>Categories</Text>
       {categories && !isProcessing && (
         <ScrollView
           style={styles.scrollView}
