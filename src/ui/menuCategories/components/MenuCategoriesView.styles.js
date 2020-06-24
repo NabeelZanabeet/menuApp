@@ -32,7 +32,6 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 70,
     paddingTop: 10,
-    paddingBottom: 20,
   },
   categoryCard: {
     justifyContent: 'center',
@@ -40,7 +39,7 @@ const styles = StyleSheet.create({
     padding: STYLE.SPACING.MINIMAL,
     borderRadius: 5,
     marginHorizontal: STYLE.SPACING.DEFAULT,
-    marginBottom: STYLE.SPACING.VIEW_MARGIN,
+    marginVertical: STYLE.SPACING.MINIMAL,
     shadowColor: STYLE.COLOR.BLACK,
     shadowOffset: {
       width: 0,
@@ -54,6 +53,9 @@ const styles = StyleSheet.create({
   name: {
     textAlign: 'center',
     margin: STYLE.SPACING.MINIMAL,
+  },
+  verticalSpace: {
+    height: 30,
   },
 });
 

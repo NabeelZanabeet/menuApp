@@ -26,6 +26,7 @@ const MenuCategoriesView = ({
                 <Text style={styles.name}>{`Name: ${category.name}`}</Text>
               </View>
             ))}
+          <View style={styles.verticalSpace} />
         </ScrollView>
       )}
       {!categories && isProcessing && (

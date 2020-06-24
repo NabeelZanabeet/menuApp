@@ -22,6 +22,7 @@ const MenuItemsView = ({ isProcessing, items, onPressBackButton }) => {
               <Text style={styles.price}>{`Price: ${item.price}`}</Text>
             </View>
           ))}
+          <View style={styles.verticalSpace} />
         </ScrollView>
       )}
       {!items && isProcessing && (
